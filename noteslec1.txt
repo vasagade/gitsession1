@@ -1,0 +1,106 @@
+HP@DESKTOP-KKC6NV3 MINGW64 ~/OneDrive/Desktop/github (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/HP/OneDrive/Desktop/github/.git/
+
+HP@DESKTOP-KKC6NV3 MINGW64 ~/OneDrive/Desktop/github (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        bhushan.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+HP@DESKTOP-KKC6NV3 MINGW64 ~/OneDrive/Desktop/github (master)
+$ git add bhushan.txt
+
+HP@DESKTOP-KKC6NV3 MINGW64 ~/OneDrive/Desktop/github (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   bhushan.txt
+
+
+HP@DESKTOP-KKC6NV3 MINGW64 ~/OneDrive/Desktop/github (master)
+$ git commit -m 'script'
+[master 0117b5e] script
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 bhushan.txt
+
+HP@DESKTOP-KKC6NV3 MINGW64 ~/OneDrive/Desktop/github (master)
+$ git remote -v
+origin  git@github.com:vasagade/gitsession1.git (fetch)
+origin  git@github.com:vasagade/gitsession1.git (push)
+
+HP@DESKTOP-KKC6NV3 MINGW64 ~/OneDrive/Desktop/github (master)
+$ git remote git@github.com:vasagade/gitsession1.git
+error: unknown subcommand: `git@github.com:vasagade/gitsession1.git'
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename [--[no-]progress] <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+
+HP@DESKTOP-KKC6NV3 MINGW64 ~/OneDrive/Desktop/github (master)
+$ git remote add  git@github.com:vasagade/gitsession1.git
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+
+HP@DESKTOP-KKC6NV3 MINGW64 ~/OneDrive/Desktop/github (master)
+$ git push origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 229 bytes | 229.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To github.com:vasagade/gitsession1.git
+   ecb2447..0117b5e  master -> master
+
+HP@DESKTOP-KKC6NV3 MINGW64 ~/OneDrive/Desktop/github (master)
+$ git log
+commit 0117b5ec7c2623405e1f02615fee80311f2d1322 (HEAD -> master, origin/master)
+Author: vasagade <harshalvasagade@gmail.com>
+Date:   Sat Nov 5 17:45:19 2022 +0530
+
+    script
+
+commit ecb2447badc1b022076b2b5733b7745bc3f03451
+Author: vasagade <harshalvasagade@gmail.com>
+Date:   Sat Nov 5 17:27:37 2022 +0530
+
+    harshv
+
+commit 72bb4c0b1725003895f9c81e57a3cdc8492f4fe3
+Author: vasagade <harshalvasagade@gmail.com>
+Date:   Sat Nov 5 14:49:31 2022 +0530
+
+    demo commit
+
+HP@DESKTOP-KKC6NV3 MINGW64 ~/OneDrive/Desktop/github (master)
+$ ^C
+
+HP@DESKTOP-KKC6NV3 MINGW64 ~/OneDrive/Desktop/github (master)
+$
